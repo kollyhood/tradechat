@@ -33,7 +33,7 @@
     socket.on('message', addMessage);
 
     function addMessage({ name, message }) {
-        $("#messages").append(`<h4>${name}</h4><p>${message}</p>`);
+        $("#messages").prepend(`<h4>${name}</h4><p>${message}</p>`);
     }
 
     function getMessages() {
