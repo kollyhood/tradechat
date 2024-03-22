@@ -37,12 +37,12 @@
     }
 
     function getMessages() {
-        $.get('http://localhost:3000/messages', messages => {
+        $.get('https://tradechat-vewz.onrender.com/messages', messages => {
             messages.forEach(addMessage);
         });
     }
 
     function postMessage(message) {
-        $.post('http://localhost:3000/message', message);
+        $.post('https://tradechat-vewz.onrender.com/message', message);
     }
 </script>
